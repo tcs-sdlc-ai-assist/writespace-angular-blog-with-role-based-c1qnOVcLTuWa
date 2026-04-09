@@ -1,0 +1,36 @@
+node_modules/
+dist/
+.env
+.env.local
+.env.development
+.env.production
+.angular/
+.DS_Store
+coverage/
+tmp/
+out-tsc/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+Thumbs.db
+
+# Angular cache
+.sass-cache/
+
+# Build output
+build/
+*.tsbuildinfo
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

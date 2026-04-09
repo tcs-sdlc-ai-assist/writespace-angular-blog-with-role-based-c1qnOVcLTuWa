@@ -1,0 +1,101 @@
+:host {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  user-select: none;
+  flex-shrink: 0;
+  background-color: var(--avatar-bg-color, #e0e0e0);
+  color: var(--avatar-text-color, #ffffff);
+  width: var(--avatar-size, 40px);
+  height: var(--avatar-size, 40px);
+  font-size: var(--avatar-font-size, 20px);
+  line-height: 1;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+.avatar--sm {
+  --avatar-size: 32px;
+  --avatar-font-size: 16px;
+}
+
+.avatar--md {
+  --avatar-size: 40px;
+  --avatar-font-size: 20px;
+}
+
+.avatar--lg {
+  --avatar-size: 56px;
+  --avatar-font-size: 28px;
+}
+
+.avatar--xl {
+  --avatar-size: 72px;
+  --avatar-font-size: 36px;
+}
+
+.avatar--admin {
+  --avatar-bg-color: #d32f2f;
+  --avatar-text-color: #ffffff;
+}
+
+.avatar--editor {
+  --avatar-bg-color: #1976d2;
+  --avatar-text-color: #ffffff;
+}
+
+.avatar--author {
+  --avatar-bg-color: #388e3c;
+  --avatar-text-color: #ffffff;
+}
+
+.avatar--reader {
+  --avatar-bg-color: #7b1fa2;
+  --avatar-text-color: #ffffff;
+}
+
+.avatar--guest {
+  --avatar-bg-color: #9e9e9e;
+  --avatar-text-color: #ffffff;
+}
+
+.avatar__emoji {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-style: normal;
+  pointer-events: none;
+}
+
+.avatar__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.avatar__initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  font-size: calc(var(--avatar-font-size, 20px) * 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
